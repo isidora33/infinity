@@ -246,13 +246,20 @@ ul.footerMenu li a i {
   margin-top: 0px;
 }
 .product {
-  width: 250px;
+  width: 260px;
   padding: 10px;
-  margin: 40px;
+  margin: 20px 50px;
   text-align: center;
   background-color: #ddd;
   border-radius: 10px;
   box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.75);
+}
+
+.product:first-child {
+  margin-left: 0px;
+}
+.product:last-child {
+  margin-right: 0px;
 }
 
 .product img {
@@ -284,9 +291,8 @@ ul.footerMenu li a i {
 
 .products {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 10px 0px;
 }
 
 .item {
@@ -318,12 +324,14 @@ ul.footerMenu li a i {
   font-size: 45px;
 }
 
-.image {
-  width: 49%;
+.our-story {
+  background-image: url(../img/about.jpg);
 }
-.image img {
-  width: 100%;
-  box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.75);
+.image {
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bgColor {
@@ -331,11 +339,12 @@ ul.footerMenu li a i {
 }
 
 .aboutUs {
-  width: 49%;
+  width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10% 0;
 }
 
 .ourStory {
@@ -396,4 +405,90 @@ ul.footerMenu li a i {
   width: 23%;
   box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.75);
   padding: 2%;
+}
+
+#getDiscount {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a2a2a2;
+  border: 2px dashed rgb(75, 0, 130);
+  border-radius: 10px;
+}
+
+.form-wrap {
+  width: 55%;
+  padding: 2% 3%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#form1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  width: 100%;
+}
+.form-row input:first-child {
+  margin-right: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  padding: 8px;
+  background-color: #a2a2a2;
+  color: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #666565;
+}
+
+#name,
+#lastName,
+#username,
+#password {
+  width: 50%;
+}
+
+.signUp {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../img/signup.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.off {
+  text-transform: uppercase;
+  font-size: 26px;
+  color: rgb(75, 0, 130);
+}
+
+.images {
+  width: 50%;
+}
+
+.rings {
+  padding-bottom: 50px;
+}
+
+.about1 {
+  background-image: url(../img/about2.jpg);
+}
+
+.about2 {
+  background-image: url(../img/about1.jpg);
 }
