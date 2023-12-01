@@ -513,7 +513,7 @@ input {
   width: 52%;
   position: relative;
   left: -100%;
-  animation: slideInFromLeft 1.8s ease-in-out forwards;
+  animation: slideInFromLeft 1s ease-in-out forwards;
 }
 @keyframes slideInFromLeft {
   from {
@@ -528,7 +528,7 @@ input {
   background-image: url(../img/about1.jpg);
   position: relative;
   right: -100%;
-  animation: slideInFromRight 1.5s ease-in-out forwards;
+  animation: slideInFromRight 1.2s ease-in-out forwards;
 }
 
 @keyframes slideInFromRight {
