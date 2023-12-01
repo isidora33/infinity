@@ -101,6 +101,17 @@ header ul.nav a {
   margin: 15% auto;
   text-align: center;
   color: #4b0082;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #title h1 {
@@ -500,10 +511,33 @@ input {
 .about1 {
   background-image: url(../img/about2.jpg);
   width: 52%;
+  position: relative;
+  left: -100%;
+  animation: slideInFromLeft 1.8s ease-in-out forwards;
+}
+@keyframes slideInFromLeft {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 .about2 {
   background-image: url(../img/about1.jpg);
+  position: relative;
+  right: -100%;
+  animation: slideInFromRight 1.5s ease-in-out forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
 }
 
 .gallery {
