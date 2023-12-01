@@ -100,7 +100,7 @@ header ul.nav a {
   width: 50%;
   margin: 15% auto;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: #4b0082;
 }
 
 #title h1 {
@@ -108,11 +108,11 @@ header ul.nav a {
 }
 
 #title h2 {
-  color: rgb(75, 0, 130);
+  color: #dadada;
 }
 footer {
   width: 100%;
-  background-color: rgb(169, 169, 169);
+  background-color: rgb(128, 128, 128);
   display: flex;
   justify-content: space-between;
   padding: 3px 20px;
@@ -231,7 +231,7 @@ ul.footerMenu li a i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: grey;
+  background-color: rgb(170, 170, 170);
   padding: 20px;
 }
 
@@ -307,7 +307,7 @@ ul.footerMenu li a i {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: rgb(128, 128, 128);
+  background-color: #a2a2a2;
 }
 
 .item h2,
@@ -335,7 +335,7 @@ ul.footerMenu li a i {
 }
 
 .bgColor {
-  background-color: #a2a2a2;
+  background-color: rgb(128, 128, 128);
 }
 
 .aboutUs {
@@ -348,9 +348,8 @@ ul.footerMenu li a i {
 }
 
 .ourStory {
-  padding: 0px 20px;
+  padding: 0px;
 }
-
 .aboutUs p {
   margin-bottom: 25px;
   font-size: 20px;
@@ -362,7 +361,7 @@ ul.footerMenu li a i {
   margin-top: 15px;
   border-radius: 3px;
   text-decoration: none;
-  color: rgb(75, 0, 130);
+  color: #4b0082;
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
@@ -387,24 +386,36 @@ ul.footerMenu li a i {
 }
 
 .profile h3 {
-  width: 70%;
+  width: 75%;
   text-align: left;
+  font-size: 20px;
 }
 
 .reviews {
   padding-left: 0px;
   padding-right: 0px;
+  background-color: #4d4c4c;
 }
 
 .review {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #b6b5b5;
+  background-color: rgb(128, 128, 128);
   border-radius: 10px;
   width: 23%;
-  box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.75);
+  border: 1px solid #dadada;
   padding: 2%;
+}
+
+.review p {
+  margin: 8px 0px;
+  font-size: 18px;
+}
+
+.stars {
+  color: #4b0082;
+  font-size: 23px;
 }
 
 #getDiscount {
@@ -487,8 +498,93 @@ input {
 
 .about1 {
   background-image: url(../img/about2.jpg);
+  width: 52%;
 }
 
 .about2 {
   background-image: url(../img/about1.jpg);
+}
+
+.gallery {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(170, 170, 170);
+}
+
+.images-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-gallery {
+  margin-right: 10px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: inherit;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+}
+
+.image-gallery img:hover {
+  scale: 103%;
+}
+
+.image-gallery:last-child {
+  margin-right: 0px;
+}
+
+.customer-reviews {
+  background-color: #4d4c4c;
+}
+
+#author-image {
+  width: 30%;
+  border-radius: 5px;
+}
+#author-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#author-text {
+  width: 68%;
+  text-align: center;
+  font-size: 26px;
+  line-height: 170%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px dashed #4b0082;
+  border-bottom: 3px dashed #4b0082;
+}
+
+#author-text p {
+  margin-bottom: 10px;
+}
+
+.author {
+  padding: 50px 70px;
+}
+
+.text-color {
+  color: #4b0082;
+  font-weight: bold;
+}
+
+.index {
+  font-size: 30px;
+}
+
+.lighter {
+  color: #a2a2a2;
+  border-bottom: 2px solid #dadada;
 }
