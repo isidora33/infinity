@@ -11,17 +11,17 @@ html {
 
 header {
   width: 100%;
-  background-color: rgb(229, 228, 226);
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  background-color: #e5e4e2;
 }
 
 header .nav a {
   transition: border-bottom 0.2s ease;
 }
 header .nav li:hover a {
-  border-bottom: 2px solid rgb(75, 0, 130);
+  border-bottom: 2px solid #4b0082;
 }
 
 header .nav a:last-child {
@@ -34,7 +34,7 @@ header .nav li:last-child {
 }
 
 .selected a {
-  border-bottom: 2px solid rgb(75, 0, 130);
+  border-bottom: 2px solid #4b0082;
 }
 
 #logo {
@@ -53,7 +53,7 @@ header .nav li:last-child {
 
 #logo a {
   text-decoration: none;
-  color: rgb(75, 0, 130);
+  color: #4b0082;
 }
 
 header ul.nav {
@@ -71,7 +71,7 @@ header ul.nav li {
 header ul.nav a {
   text-decoration: none;
   font-size: 22px;
-  color: rgb(75, 0, 130);
+  color: #4b0082;
   padding: 3px;
 }
 
@@ -112,7 +112,7 @@ header ul.nav a {
 }
 footer {
   width: 100%;
-  background-color: rgb(128, 128, 128);
+  background-color: #666565;
   display: flex;
   justify-content: space-between;
   padding: 3px 20px;
@@ -125,7 +125,7 @@ footer {
 
 #footerLeft .footerMenu a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 
 #footerLeft .footerMenu a:hover {
@@ -173,6 +173,7 @@ footer {
 
 #logoFooter a {
   text-decoration: none;
+  color: #4b0082;
 }
 
 #social ul.socials {
@@ -192,7 +193,7 @@ footer {
 
 #social ul.socials a i {
   font-size: 25px;
-  color: rgb(75, 0, 130);
+  color: #4b0082;
   transition: color 0.3s ease;
 }
 
@@ -201,7 +202,7 @@ footer {
 }
 #copyright {
   text-align: center;
-  border-top: 1px solid rgb(75, 0, 130);
+  border-top: 1px solid #4b0082;
   margin-top: 20px;
   padding: 8px;
   font-size: small;
@@ -218,20 +219,20 @@ ul.contact li {
 
 ul.contact li i {
   font-size: 20px;
-  color: rgb(75, 0, 130);
+  color: #4b0082;
   padding: 0px 3px;
 }
 
 ul.footerMenu li a i {
   padding: 0 10px;
-  color: rgb(75, 0, 130);
+  color: #4b0082;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(170, 170, 170);
+  background-color: #aaaaaa;
   padding: 20px;
 }
 
@@ -239,7 +240,7 @@ ul.footerMenu li a i {
   font-size: 26px;
   margin: 20px auto;
   padding-bottom: 3px;
-  border-bottom: 3px solid rgb(75, 0, 130);
+  border-bottom: 3px solid #4b0082;
   display: inline-block;
 }
 .our {
@@ -270,7 +271,7 @@ ul.footerMenu li a i {
 .product p {
   font-size: 18px;
   font-weight: bold;
-  color: rgb(75, 0, 130);
+  color: #4b0082;
 }
 
 .cart a {
@@ -312,7 +313,7 @@ ul.footerMenu li a i {
 
 .item h2,
 .item i {
-  color: rgb(75, 0, 130);
+  color: #4b0082;
   margin: 10px 0px;
 }
 
@@ -335,7 +336,7 @@ ul.footerMenu li a i {
 }
 
 .bgColor {
-  background-color: rgb(128, 128, 128);
+  background-color: #808080;
 }
 
 .aboutUs {
@@ -370,7 +371,7 @@ ul.footerMenu li a i {
 }
 
 .aboutButton a:hover {
-  color: rgb(61, 0, 105);
+  color: #3d0069;
   background-color: #a2a2a2;
 }
 
@@ -382,7 +383,7 @@ ul.footerMenu li a i {
 
 .profile img {
   width: 20%;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .profile h3 {
@@ -401,7 +402,7 @@ ul.footerMenu li a i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(128, 128, 128);
+  background-color: #808080;
   border-radius: 10px;
   width: 23%;
   border: 1px solid #dadada;
@@ -426,7 +427,7 @@ ul.footerMenu li a i {
   align-items: center;
   justify-content: center;
   background-color: #a2a2a2;
-  border: 2px dashed rgb(75, 0, 130);
+  border: 2px dashed #4b0082;
   border-radius: 10px;
 }
 
@@ -485,7 +486,7 @@ input {
 .off {
   text-transform: uppercase;
   font-size: 26px;
-  color: rgb(75, 0, 130);
+  color: #4b0082;
 }
 
 .images {
@@ -510,7 +511,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(170, 170, 170);
+  background-color: #aaaaaa;
 }
 
 .images-gallery {
