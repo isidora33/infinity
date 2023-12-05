@@ -515,14 +515,6 @@ input {
   left: -100%;
   animation: slideInFromLeft 1s ease-in-out forwards;
 }
-@keyframes slideInFromLeft {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0;
-  }
-}
 
 .about2 {
   background-image: url(../img/about1.jpg);
@@ -583,10 +575,22 @@ input {
 #author-image {
   width: 30%;
   border-radius: 5px;
+  left: -100%;
 }
+
 #author-image img {
   width: 100%;
   border-radius: 5px;
+  left: -100%;
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+@keyframes slideInFromLeft {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 #author-text {
