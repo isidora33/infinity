@@ -10,18 +10,22 @@ html {
 }
 
 header {
+  position: relative;
+  z-index: 8;
   width: 100%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   background-color: #dcf2f1;
+  box-shadow: 1px -5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 header .nav a {
-  transition: border-bottom 0.2s ease;
+  transition: all 0.2 ease;
 }
 header .nav li:hover a {
-  border-bottom: 2px solid #0f1035;
+  color: #0f1035;
+  font-weight: 500;
 }
 
 header .nav a:last-child {
@@ -76,8 +80,11 @@ header ul.nav a {
 }
 
 #main {
+  position: relative;
+  z-index: 7;
   background-image: url(../img/main-cover.jpg);
   background-attachment: fixed;
+  box-shadow: 1px -5px 26px 0px rgba(0, 0, 0, 0.5);
 }
 
 .bgImage {
@@ -124,11 +131,14 @@ header ul.nav a {
   color: #365486;
 }
 footer {
+  position: relative;
+  z-index: 6;
   width: 100%;
   background-color: #7fc7d9;
   display: flex;
   justify-content: space-between;
   padding: 3px 20px;
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .footerMenu li {
@@ -242,6 +252,8 @@ ul.footerMenu li a i {
 }
 
 .container {
+  position: relative;
+  z-index: 6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,6 +271,16 @@ ul.footerMenu li a i {
   padding-bottom: 3px;
   border-bottom: 3px solid #0f1035;
   display: inline-block;
+}
+
+.title-pages {
+  font-size: 35px;
+  margin: 30px auto;
+  margin-bottom: 40px;
+  color: #365486;
+  border-bottom: 3px dashed #dcf2f1;
+  display: inline-block;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 .our {
   margin-top: 0px;
@@ -350,6 +372,8 @@ ul.footerMenu li a i {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 150px 50px;
+  border: 1px solid #0f1035;
 }
 
 .bgColor {
@@ -357,17 +381,29 @@ ul.footerMenu li a i {
 }
 
 .aboutUs {
-  width: 50%;
+  width: 45%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10% 0;
+  position: relative;
+  left: -100%;
+  animation: slideInFromLeft 1.5s ease-in-out forwards;
 }
 
 .ourStory {
-  padding: 0px;
+  padding: 0px 30px;
+  margin: 30px 0;
   overflow-x: hidden;
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
 }
 .aboutUs p {
   margin-bottom: 25px;
@@ -414,7 +450,7 @@ ul.footerMenu li a i {
 .reviews {
   padding-left: 0px;
   padding-right: 0px;
-  background-color: #365486;
+  background-color: #dcf2f1;
 }
 
 .review {
@@ -528,6 +564,7 @@ input {
   position: relative;
   left: -100%;
   animation: slideInFromLeft 1s ease-in-out forwards;
+  border-radius: 50px 150px;
 }
 
 .about2 {
@@ -547,11 +584,12 @@ input {
 }
 
 .gallery {
-  padding: 10px 20px;
+  padding: 20px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #365486;
+  background-color: #fff;
 }
 
 .images-gallery {
@@ -572,10 +610,12 @@ input {
   border-radius: 5px;
   overflow: hidden;
   transition: all 0.5s ease-in;
+  opacity: 0.6;
 }
 
 .image-gallery img:hover {
-  scale: 103%;
+  scale: 101%;
+  opacity: 1;
 }
 
 .image-gallery:last-child {
@@ -583,7 +623,7 @@ input {
 }
 
 .customer-reviews {
-  background-color: #365486;
+  background-color: #dcf2f1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -642,6 +682,6 @@ input {
 }
 
 .lighter {
-  color: #7fc7d9;
-  border-bottom: 2px solid #dcf2f1;
+  color: #365486;
+  border-bottom: 2px solid #7fc7d9;
 }
